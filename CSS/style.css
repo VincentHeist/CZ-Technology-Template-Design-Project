@@ -48,26 +48,28 @@
 .header{
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
 }
 
 .head-logo{
     width: 40%;
     padding-top: 10px;
+    border-top: 2px solid transparent;
 }
 
 .head-logo a{
     display: block;
+    padding: 20px 0;
 }
 
 .menubar{
-    padding-top: 10px;
     display: flex;
     gap: 30px; 
 }
 
 .head-search{
     color: white;
+    padding: 30px 0;
+    border-top: 2px solid transparent;
 }
 
 .menu ul{
@@ -75,6 +77,15 @@
     justify-content: space-between;
     gap: 30px;
     list-style: none;
+}
+
+.menu ul li{
+    padding: 30px 0;
+    border-top: 2px solid transparent;
+}
+
+#active-li{
+    border-top: 2px solid #fca311;
 }
 
 .menu ul li a{
@@ -102,6 +113,41 @@
 }
 
 /* Banner CSS */
+.banner-wrapper.slick-initialized.slick-slider.slick-dotted {
+    margin-bottom: 0;
+}
+
+.slick-prev.slick-arrow {
+    left: 25px;
+    z-index: 5;
+}
+
+.slick-prev.slick-arrow::before{
+    color: #fca311;
+}
+
+.slick-next.slick-arrow {
+    right: 25px;
+}
+
+.slick-next.slick-arrow::before{
+    color: #fca311;
+}
+
+.banner-wrapper ul.slick-dots {
+    bottom: 25px;
+}
+
+.slick-dots li button:before {
+    color: white;
+    opacity: 100;
+    font-size: 10px;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #fca311;
+    opacity: 100;
+}
 
 .banner{
     background-image: url("../Assets/Rectangle 10.png");
@@ -308,9 +354,9 @@
 }
 
 /* Our Scope CSS */
-.our-scope-content{
+/* .our-scope-content{
     display: flex;
-}
+} */
 
 .our-scope-left{
     position: relative;
@@ -377,8 +423,6 @@
 }
 
 .scope-right-content{
-    display: flex;
-    justify-content: space-between;
     padding: 120px 0px 100px 80px;
 }
 
@@ -606,11 +650,6 @@
 
 }
 
-.get-in-touch-inputs{
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .get-in-touch-inputs label{
     padding: 20px 0 5px 10px;
     color: white;
@@ -686,10 +725,6 @@
 /* Footer CSS */
 .footer{
     background-color: #fca311;
-}
-
-.footer-content{
-    display: flex;
 }
 
 .first-content{
@@ -771,7 +806,6 @@
 }
 
 
-
 /* About Us CSS */
 
 
@@ -833,12 +867,12 @@
 }
 
 .about-us-content{
-    display: flex;
+    text-align: justify;
     padding-top: 80px;
 }
 
 .about-us-content p{
-    padding-right: 20px;
+    padding-right: 50px;
     font-size: 20px;
     line-height: 30px;
 }
@@ -868,14 +902,9 @@
     padding-top: 10px;
 }
 
-.mission-and-vision-content{
-    display: flex;
-    justify-content: space-between;
-}
-
 .mission-and-vision-card{
     text-align: center;
-    padding: 42px;
+    padding: 30px;
     border: 1px solid black;
 }
 
@@ -959,12 +988,6 @@
     font-size: 64px;
     line-height: 75px;
     font-weight: 700;
-}
-
-/* Get In Touch Form CSS */
-.contact-us-get-in-touch-form-content{
-    display: flex;
-    justify-content: space-between;
 }
 
 .contact-us-get-in-touch-form-content-left{
