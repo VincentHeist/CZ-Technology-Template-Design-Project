@@ -1,0 +1,1066 @@
+/* Common CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.barlow-regular {
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.barlow-bold {
+    font-family: "Barlow", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.orange-span{
+    color: #fca311;
+}
+
+.button-main{
+    background-color: #fca311;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 0.3s;
+    border: 1px solid transparent;
+}
+
+.button-main:hover{
+    border: 1px solid #754903;
+    background-color: #ec9406;
+}
+
+/* Header CSS */
+
+.header-shade{
+    background-image: linear-gradient(to bottom, #00000070, #00000009);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.head-logo{
+    width: 40%;
+    padding-top: 10px;
+}
+
+.head-logo a{
+    display: block;
+}
+
+.menubar{
+    padding-top: 10px;
+    display: flex;
+    gap: 30px; 
+}
+
+.head-search{
+    color: white;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    list-style: none;
+}
+
+.menu ul li a{
+    padding: 10px 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.menu ul li a.active{
+    background-color: #fca311;
+    color: black;
+}
+
+.menu ul li a:hover{
+    background-color: #fca311;
+    color: black;
+    transition-property: all;
+    transition-delay: 0.03s;
+    transition-duration: 0.5s;
+}
+
+.menu ul li a.active:hover{
+    color: white;
+}
+
+/* Banner CSS */
+
+.banner{
+    background-image: url("../Assets/Rectangle 10.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.banner::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000060;
+    z-index: 0;
+}
+
+.banner-mid{
+    padding: 250px 0;
+}
+
+.banner-mid-content{
+    position: relative;
+    max-width: 680px;
+    z-index: 1;
+}
+
+.banner-mid-content h2{
+    color: #fca311;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.banner-mid-content h1{
+    color: white;
+    font-size: 64px;
+    line-height: 75px;
+    font-weight: 700;
+}
+
+.banner-mid-content p{
+    color: white;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+    margin: 30px 0px;
+}
+
+.banner-mid-content a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Banner2 CSS */
+
+.banner2{
+    overflow: hidden;
+}
+
+.banner2-content{
+    display: flex;
+    gap: 5px;
+}
+
+.banner2-content-left{
+    background-color: #fca311;
+    width: 60%;
+    padding: 50px 40px 30px 0px;
+    position: relative;
+}
+
+.banner2-content-left::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 100%;
+    left: -5000px;
+    bottom: 0;
+    background-color: #fca311;
+}
+
+.banner2-content-left h2{
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.banner2-content-left p{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.banner2-content-right{
+    background-color: #1F2324;
+    width: 40%;
+    font-weight: 700;
+    color: white;
+    padding: 30px 0px 30px 50px;
+    text-align: right;
+    position: relative;
+}
+
+.banner2-content-right::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: -5000px;
+    left: 100%;
+    bottom: 0;
+    background-color: #1F2324;
+}
+
+.banner2-content-right p img{
+    margin-right: 10px;
+}
+
+.banner2-content-right a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+/* Why Us CSS */
+.why-us-section{
+    padding-bottom: 10px;
+}
+
+.why-us-section-content{
+    position: relative;
+    z-index: 0;
+}
+
+.why-us-section-content::before{
+    position: absolute;
+    content: "";
+    top: 45%;
+    right: 50%;
+    left: -10%;
+    bottom: 0;
+    background-image: url("../Assets/horror_image.png");
+    background-repeat: no-repeat;
+    opacity: 10%;
+    z-index: 1;
+}
+
+.why-us-header{
+    text-align: center;
+    padding: 80px 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.why-us-header h1{
+    font-size: 64px;
+    line-height: 75px;
+    font-weight: 700;
+}
+
+.why-us-header p{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.why-us-cards{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 100px 50px;
+    z-index: 2;
+}
+
+.why-us-card-content{
+    width: 30%;
+    padding: 5px;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+}
+
+.why-us-card-content:hover{
+    border: 1px solid #fca311;
+    transition-property: all;
+    transition-delay: 0.03s;
+    transition-duration: 0.5s;
+    box-shadow: 0 0 5px #fca311;
+}
+
+.why-us-card-content h2{
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+    padding: 5px 0;
+}
+
+.why-us-card-content p{
+    font-size: 18px;
+    line-height: 25px;
+    padding-top: 10px;
+}
+
+/* Our Scope CSS */
+.our-scope-content{
+    display: flex;
+}
+
+.our-scope-left{
+    position: relative;
+    padding: 80px 20px 50px 0;
+    background-color: #fca311;
+}
+
+.our-scope-left::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 100%;
+    left: -100%;
+    bottom: 0;
+    background-color: #fca311;
+}
+
+.our-scope-left h3{
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.our-scope-left span{
+    font-size: 64px;
+    line-height: 75px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.our-scope-left h2{
+    font-size: 48px;
+    line-height: 75px;
+    font-weight: 700;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.our-scope-left p{
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.our-scope-right{
+    padding-top: 50px;
+}
+
+.our-scope-right-header{
+    text-align: center;
+}
+
+.our-scope-right-header h1{
+    font-size: 64px;
+    line-height: 75px;
+    font-weight: 700;
+}
+
+.our-scope-right-header p{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.scope-right-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 0px 100px 80px;
+}
+
+.scope-card{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #fca311;
+    box-shadow: 0 0 5px #fca311;
+}
+
+.scope-card h2{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.scope-card p{
+    font-size: 16px;
+    line-height: 25px;
+    padding: 10px;
+}
+
+.scope-card img{
+    width: 100%;
+}
+
+.scope-card img:hover{
+    scale: 1.5;
+    transition-property: all;
+    transition-delay: 0.03s;
+    transition-duration: 0.5s;
+}
+
+.scope-card-image{
+    overflow: hidden;
+}
+
+.card-height p{
+    padding: 23px 10px;
+}
+
+.scope-right-button{
+    text-align: center;
+    padding: 100px 0 0 80px;
+}
+
+.scope-right-button a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Featured Products CSS */
+.featured-products-header{
+    text-align: center;
+    padding: 50px 0;
+}
+
+.featured-products-header h1{
+    font-size: 64px;
+    line-height: 75px;
+    font-weight: 700;
+}
+
+.featured-products-header p{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.featured-products-card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px 25px;
+}
+
+.featured-products-card-content{
+    position: relative;
+    width: 49%;
+    z-index: 0;
+}
+
+.featured-products-card-content img{
+    width: 100%;
+}
+
+.featured-products-card-info{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    padding: 20px;
+    z-index: 1;
+}
+
+.featured-products-card-info::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, #2e2c2c70, #00000009);
+    z-index: -1;
+}
+
+.featured-products-card-info p{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.featured-products-card-info h2{
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.featured-products-card-info h3{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.view-more{
+    text-align: center;
+    padding: 100px 0 50px 0;
+}
+
+.view-more a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+/* Stats CSS */
+.stats{
+    background-image: url("../Assets/stats-background.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+    background-attachment: fixed;
+}
+
+.stats::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #00000060;
+    z-index: 1;
+}
+
+.stats-content{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 50px 0;
+    color: white;
+}
+
+.stats-info{
+    position: relative;
+    z-index: 2;
+}
+
+.stats-info h2{
+    padding-top: 20px;
+    font-size: 48px;
+    line-height: 55px;
+    font-weight: 700;
+    color: #fca311;
+}
+
+.stats-info p{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+/* Get In Touch CSS */
+.get-in-touch{
+    background-image: url("../Assets/get-in-touch-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+    padding: 100px 0;
+}
+
+.get-in-touch::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom right, #000000bd, #00000000);
+    z-index: 1;
+}
+
+.stars{
+    color: #fca311;
+}
+
+.stars i{
+    padding: 20px 10px 20px 0;
+}
+
+.get-in-touch-form{
+    position: relative;
+    z-index: 2;
+}
+
+.get-in-touch-form h1{
+    color: #fca311;
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: 700;
+
+}
+
+.get-in-touch-inputs{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.get-in-touch-inputs label{
+    padding: 20px 0 5px 10px;
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.get-in-touch-inputs input{
+    padding: 20px 40px 20px 10px;
+    width: 80%;
+    border-radius: 10px;
+    border: 1px solid #fafafa;
+}
+
+.get-in-touch-inputs i{
+    color: #3C3C3C;
+    margin-left: -30px;
+}
+
+.input-extra input{
+    width: 90%;
+}
+
+.input-extra label{
+    padding-top: 40px;
+}
+
+.get-in-touch-inputs input:focus{
+    outline: none;
+}
+
+.get-in-touch-inputs input::placeholder{
+    color: #3C3C3C;
+}
+
+.form-submit-button{
+    padding-top: 50px;
+}
+
+.form-submit-button a{
+    color: black;
+}
+
+/* Follow Us CSS */
+.follow-us{
+    padding: 30px 0;
+    background-color: #3C3C3C;
+}
+
+.follow-us-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.follow-us-header h2{
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0;
+}
+
+.follow-us-icons i{
+    font-size: 36px;
+    line-height: 40px;
+    color: #fca311;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-left: 2px solid #fca311;
+}
+
+/* Footer CSS */
+.footer{
+    background-color: #fca311;
+}
+
+.footer-content{
+    display: flex;
+}
+
+.first-content{
+    padding: 50px 20px 50px 0;
+}
+
+.first-content p{
+    padding-top: 20px;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.second-third-content{
+    padding: 50px 0px 50px 80px;
+}
+
+.second-third-content h2{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.second-third-content li{
+    font-size:16px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.second-third-content ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.second-third-content li{
+    padding-top: 30px;
+}
+
+.fourth-content{
+    padding: 50px 0px 50px 80px;
+}
+
+.fourth-content h2{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.fourth-content-info{
+    padding: 10px 0;
+    display: flex;
+    gap: 50px;
+}
+
+.fourth-content-info i{
+    padding-top: 10px;
+}
+
+.fourth-content-info p{
+    font-size: 20px;
+    line-height: 33px;
+    font-weight: 700;
+}
+
+.footer-end{
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid black;
+}
+
+.footer-end p{
+    margin-bottom: 0;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.255em;
+}
+
+.footer-end span{
+    font-weight: 700;
+}
+
+
+
+/* About Us CSS */
+
+
+/* About Us Banner CSS */
+.about-us-banner{
+    background-image: url("../Assets/about-us-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.about-us-banner::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000060;
+    z-index: 0;
+}
+
+.about-us-banner-mid{
+    padding: 150px 0;
+}
+
+.about-us-banner-mid-content{
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.about-us-banner-mid-content h1{
+    color: white;
+    font-size: 64px;
+    line-height: 75px;
+    font-weight: 700;
+}
+
+/* About Us Section CSS */
+.about-us{
+    padding: 100px 0;
+}
+
+.about-us-header{
+    text-align: center;
+}
+
+.about-us-header h1{
+    font-size: 64px;
+    line-height: 75px;
+    font-weight: 700;
+}
+
+.about-us-header p{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+.about-us-content{
+    display: flex;
+    padding-top: 80px;
+}
+
+.about-us-content p{
+    padding-right: 20px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+/* Mission and Vision CSS */
+.mission-and-vision{
+    padding: 100px 0;
+}
+
+.mission-and-vision-header{
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 50px;
+    max-width: 600px;
+}
+
+.mission-and-vision-header h1{
+    font-size: 64px;
+    line-height: 75px;
+    font-weight: 700;
+}
+
+.mission-and-vision-header p{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+.mission-and-vision-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mission-and-vision-card{
+    text-align: center;
+    padding: 42px;
+    border: 1px solid black;
+}
+
+.mission-and-vision-card h2{
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+    padding: 20px 0;
+}
+
+.mission-and-vision-card p{
+    font-size: 18px;
+    line-height: 26px;
+}
+
+/* Authority Dialogue CSS */
+.authority-dialogue{
+    text-align: center;
+    padding: 50px 0 100px 0;
+}
+
+.authority-dialogue-header{
+    padding-bottom: 50px;
+}
+
+.authority-dialogue-header h1{
+    font-size: 64px;
+    line-height: 75px;
+    font-weight: 700;
+}
+
+.authority-dialogue-header p{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+.authority-dialogue-content p{
+    font-size: 32px;
+    line-height: 64px;
+    padding: 0 50px;
+}
+
+
+/* Contact Us CSS */
+
+
+/* COntact Us Banner CSS */
+.contact-us-banner{
+    background-image: url("../Assets/contact-us-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.contact-us-banner::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000060;
+    z-index: 0;
+}
+
+.contact-us-banner-mid{
+    padding: 150px 0;
+}
+
+.contact-us-banner-mid-content{
+    position: relative;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.contact-us-banner-mid-content h1{
+    color: white;
+    font-size: 64px;
+    line-height: 75px;
+    font-weight: 700;
+}
+
+/* Get In Touch Form CSS */
+.contact-us-get-in-touch-form-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-us-get-in-touch-form-content-left{
+    background-color: #fca311;
+    padding: 240px 0;
+    position: relative;
+    color: white;
+}
+
+.contact-us-get-in-touch-form-content-left::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 100%;
+    left: -1000px;
+    bottom: 0;
+    background-color: #fca311;
+}
+
+.contact-us-get-in-touch-form-content-left h2{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    color: black;
+    padding-bottom: 30px;
+}
+
+.contact-us-get-in-touch-form-content-left p{
+    font-size: 18px;
+    line-height: 20px;
+    padding-bottom: 20px;
+}
+
+.our-location{
+    display: flex;
+    gap: 30px;
+    padding-bottom: 10px;
+}
+
+.our-location i{
+    padding-top: 3px;
+}
+
+.contact-us-get-in-touch-form-content-right{
+    text-align: center;
+    padding: 80px 0;
+}
+
+.contact-us-get-in-touch-form-header{
+    max-width: 500px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.contact-us-get-in-touch-form-header h1{
+    font-size: 64px;
+    line-height: 75px;
+    font-weight: 700;
+}
+
+.contact-us-get-in-touch-form-header p{
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.contact-us-get-in-touch-form-content-right form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us-get-in-touch-form-content-right input{
+    width: 100%;
+    padding: 20px 10px;
+    border: 1px solid #3C3C3C;
+}
+
+.contact-us-get-in-touch-form-content-right textarea{
+    width: 100%;
+    resize: none;
+    padding: 20px 10px;
+    border: 1px solid #3C3C3C;
+}
+
+.contact-us-get-in-touch-form-content-right input:focus{
+    outline: none;
+}
+
+.contact-us-get-in-touch-form-content-right input::placeholder{
+    color: #3C3C3C;
+}
+
+.contact-us-get-in-touch-form-content-right textarea:focus{
+    outline: none;
+}
+
+.contact-us-get-in-touch-form-content-right textarea::placeholder{
+    color: #3C3C3C;
+}
