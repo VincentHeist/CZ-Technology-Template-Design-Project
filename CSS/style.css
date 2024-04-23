@@ -1,5 +1,4 @@
 /* Common CSS */
-
 *{
     margin: 0;
     padding: 0;
@@ -906,6 +905,7 @@
     text-align: center;
     padding: 30px;
     border: 1px solid black;
+    height: 100%;
 }
 
 .mission-and-vision-card h2{
